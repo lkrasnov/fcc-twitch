@@ -7,6 +7,11 @@
   margin: 2rem 0rem;
 }
 
+.channel {
+  width: 20rem;
+  margin: 10px 25px;
+}
+
 .footer {
   padding-top: 1.5rem;
   color: #777;
