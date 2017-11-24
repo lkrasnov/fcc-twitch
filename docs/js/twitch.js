@@ -4,7 +4,6 @@ const channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp",
 
 $(document).ready(function() {
   channels.forEach(channelId => addChannel(channelId));
-  channels.forEach(channelId => updateChannelStatus(channelId));
 });
 
 function addChannel(channelId) {
@@ -13,6 +12,7 @@ function addChannel(channelId) {
     dataType: "jsonp",
     success: function(data) {
       $(".channel-container").append(channelTemplate(data));
+      updateChannelStatus(channelId);
     }
   });
 }
